@@ -4,7 +4,6 @@
 ## 效果展示
 ![3281652175929_ pic](https://user-images.githubusercontent.com/7219191/167600361-fb90f178-188c-4382-8c92-380e6f2f1ae7.jpg)
 ## 实现功能包括
-
 * 支持iOS
 * 处理地图所需权限申请
 * 定位并自动移动地图至当前位置
@@ -12,18 +11,23 @@
 * 获取POI数据并返回
 
 ## 使用方式
-```dart
 1,
+```dart
     final AMapWidget map = AMapWidget(
       onMapCreated: (controller){
       },
       onPoiSearchDone: onPoiSearchDone,
     );
+    
  2, 
  
+ ```dart
  _mapController.searchPOI(keyword: keyword, city: cityName)
  
  3,
+ 
+ ```dart
+
     void onPoiSearchDone(dynamic result) {
     // List<SpPoi>? poiList  = jsonConvert.convertListNotNull<SpPoi>(result);
     Iterable l = json.decode(result);
@@ -33,4 +37,7 @@
       poiList = list;
     });
   }
-    
+   
+   ## 注意事项
+   目前仅支持iOS版本,后续会增加Android版本的支持
+
