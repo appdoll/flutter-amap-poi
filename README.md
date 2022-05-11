@@ -30,7 +30,6 @@
  ```dart
 
     void onPoiSearchDone(dynamic result) {
-    // List<SpPoi>? poiList  = jsonConvert.convertListNotNull<SpPoi>(result);
     Iterable l = json.decode(result);
     List<SpPoiEntity>? list = List<SpPoiEntity>.from(l.map((json) => SpPoiEntity.fromJson(json)));
     print(poiList);
