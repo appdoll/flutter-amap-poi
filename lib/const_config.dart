@@ -7,8 +7,8 @@ class ConstConfig {
   ///注意：使用[AMapWidget]的`apiKey`属性设置的key的优先级高于通过Native配置key的优先级，
   ///使用[AMapWidget]的`apiKey`属性配置后Native配置的key将失效，请根据实际情况选择使用
   static const AMapApiKey amapApiKeys = AMapApiKey(
-      androidKey: '614764b021e02bdaecf41e647f770587',
-      iosKey: '614764b021e02bdaecf41e647f770587');
+      androidKey: '',
+      iosKey: '');
 
   ///高德隐私合规声明，这里只是示例，实际使用中请按照实际参数设置[AMapPrivacyStatement]的'hasContains''hasShow''hasAgree'这三个参数
   ///
